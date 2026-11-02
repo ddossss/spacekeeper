@@ -23,3 +23,14 @@
 추가 기능: 볼륨 저장 공간 현황, 제외 폴더, 파일별 정리 이력, 원래 위치로 복원, 자동 청소 용량 제한.
 
 macOS launchd의 StartCalendarInterval을 사용한다. ProgramArguments 배열로 경로를 전달하며 셸에 사용자 경로를 삽입하지 않는다. 앱이 꺼져도 로그인 세션에서 작동하고, 자동 실행은 명시적인 토글 저장 후 시작한다.
+
+## Windows 구현
+
+같은 기능 구성을 WPF로 구현하고, 설치 앱·시작 프로그램 관리는 Windows 설정으로 연결했습니다. 사용자 로그인 상태에서 실행하는 최소 권한 Task Scheduler 작업을 사용합니다. 실제 파일 이동·복원은 Windows Shell의 IFileOperation을 이용하고, 휴지통 결과 경로를 기록합니다. 레지스트리 청소·드라이버 업데이트·보안 설정 변경은 포함하지 않습니다.
+
+공식 기술 자료:
+
+- [Microsoft: IFileOperation flags](https://learn.microsoft.com/en-us/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifileoperation-setoperationflags): recycle-on-delete, operation failure and collision behavior.
+- [Microsoft: PostDeleteItem](https://learn.microsoft.com/en-us/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifileoperationprogresssink-postdeleteitem): recycled item reporting.
+- [Microsoft: Weekly Task Scheduler XML](https://learn.microsoft.com/en-us/windows/win32/taskschd/weekly-trigger-example--xml-): calendar trigger configuration.
+- [Microsoft: .NET 10](https://dotnet.microsoft.com/en-us/download/dotnet/10.0): self-contained Windows runtime packaging.

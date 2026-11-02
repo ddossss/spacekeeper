@@ -2,7 +2,15 @@
 
 **한국어 · [日本語](README.ja.md) · [English](README.md)**
 
-한국어·日本語·English를 지원하는 macOS 데스크톱 정리 앱. SwiftUI + Foundation + CryptoKit으로 만들었으며 외부 패키지, 서버, 계정, 분석 SDK가 없습니다. macOS 13 이상이 필요합니다.
+한국어·日本語·English를 지원하는 macOS·Windows 데스크톱 정리 앱입니다. macOS는 SwiftUI, Windows는 WPF·.NET 10으로 구현했습니다. 서버, 계정, 분석 SDK가 없습니다.
+
+## Windows 실행
+
+[Releases](https://github.com/ddossss/spacekeeper/releases)에서 **Spacekeeper-win-x64.zip** 또는 **Spacekeeper-win-arm64.zip**을 받고, ZIP 전체를 폴더에 푼 뒤 **Spacekeeper.exe**를 실행하세요. 일반적인 Intel·AMD PC는 x64, ARM 기반 PC는 arm64를 선택합니다. Windows 10/11용이며 .NET 런타임이 포함되어 있습니다.
+
+사이드바에서 한국어·日本語·English를 바꿀 수 있습니다. Windows 작업 스케줄러로 예약 청소하고, 삭제할 파일은 Windows 휴지통으로 이동합니다. 설정과 복원 기록은 `%LOCALAPPDATA%\Spacekeeper`에 저장합니다. 로컬 고정 NTFS 드라이브를 지원합니다. ARM64 패키지는 교차 빌드했으며 실제 ARM64 기기 실행은 미검증입니다. 배포 파일은 코드 서명되지 않았습니다.
+
+빌드·예약·복원에 관한 내용은 [Windows 안내](windows/README.md)를 참고하세요. 아래 내용은 macOS 버전 기준입니다.
 
 ## 실행
 

@@ -23,7 +23,7 @@ public partial class MainWindow : Window
     string? _scannedPage;
     string _search = "";
     int _minimumMB = 100;
-    bool _busy, _rendering;
+    bool _busy, _rendering, _updatingSelection;
     Message? _status;
     CancellationTokenSource _cancellation = new();
     internal Exception? LastError;
@@ -85,11 +85,19 @@ public partial class MainWindow : Window
     }
     bool IsFilePage => Page is "캐시 정리" or "중복 파일" or "대용량 파일";
     List<FileEntry> Selected => Rows.Where(r => r.Selected).Select(r => r.File).ToList();
-    internal void SelectExtras() { foreach (var row in Rows) row.Selected = row.CanSelect; UpdateSelection(); }
+    internal void SelectExtras() => SetSelection(true);
+    void SetSelection(bool selected)
+    {
+        _updatingSelection = true;
+        try { foreach (var row in Rows) row.Selected = selected && row.CanSelect; }
+        finally { _updatingSelection = false; UpdateSelection(); }
+    }
     void UpdateSelection()
     {
-        SelectionText.Text = L.Text("{0}개 선택 · {1}", L.Number(Selected.Count), L.Bytes(Selected.Sum(f => f.Bytes)));
-        ReviewButton.IsEnabled = !_busy && _scannedPage == Page && Selected.Count > 0;
+        if (_updatingSelection) return;
+        var selected = Selected;
+        SelectionText.Text = L.Text("{0}개 선택 · {1}", L.Number(selected.Count), L.Bytes(selected.Sum(f => f.Bytes)));
+        ReviewButton.IsEnabled = !_busy && _scannedPage == Page && selected.Count > 0;
     }
     void SetBusy(bool value)
     {
@@ -97,7 +105,7 @@ public partial class MainWindow : Window
         Progress.Visibility = value ? Visibility.Visible : Visibility.Collapsed; CancelButton.Visibility = value ? Visibility.Visible : Visibility.Collapsed; UpdateSelection();
     }
     void CancelClicked(object sender, RoutedEventArgs e) => _cancellation.Cancel();
-    void ClearClicked(object sender, RoutedEventArgs e) { foreach (var row in Rows) row.Selected = false; }
+    void ClearClicked(object sender, RoutedEventArgs e) => SetSelection(false);
     void ShowError(Exception e) { LastError = e; _status = Message.Error(e); Status.Text = _status.ToString(); MessageBox.Show(this, _status.ToString(), "Spacekeeper", MessageBoxButton.OK, MessageBoxImage.Warning); }
     static Button Button(string key, Action action)
     {
@@ -350,7 +358,7 @@ public sealed class FileRow(FileEntry file) : INotifyPropertyChanged
     public int GroupNumber { get; set; }
     public string GroupLabel => (CanSelect ? "" : "✓ ") + L.Number(GroupNumber);
     bool _selected;
-    public bool Selected { get => _selected; set { _selected = CanSelect && value; PropertyChanged?.Invoke(this, new(nameof(Selected))); } }
+    public bool Selected { get => _selected; set { var next = CanSelect && value; if (_selected == next) return; _selected = next; PropertyChanged?.Invoke(this, new(nameof(Selected))); } }
     public bool CanSelect { get; set; } = true;
     public event PropertyChangedEventHandler? PropertyChanged;
     public void Refresh() => PropertyChanged?.Invoke(this, new(null));

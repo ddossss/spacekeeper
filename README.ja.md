@@ -2,7 +2,15 @@
 
 **[한국어](README.ko.md) · 日本語 · [English](README.md)**
 
-macOS用のネイティブ整理アプリです。古いキャッシュ、完全に同じ内容の重複ファイル、大容量ファイルを確認して整理できます。SwiftUI・Foundation・CryptoKitを使用し、アカウント、サーバー、解析SDKは不要です。
+macOS・Windows 用のネイティブ整理アプリです。古いキャッシュ、完全に同じ内容の重複ファイル、大容量ファイルを確認して整理できます。macOS は SwiftUI、Windows は WPF・.NET 10 を使用し、アカウント、サーバー、解析 SDK は不要です。
+
+## Windows の起動
+
+[Releases](https://github.com/ddossss/spacekeeper/releases) から **Spacekeeper-win-x64.zip** または **Spacekeeper-win-arm64.zip** をダウンロードし、ZIP 全体を展開して **Spacekeeper.exe** を起動してください。一般的な Intel・AMD PC は x64、ARM PC は arm64 を選びます。Windows 10/11 対応で、.NET ランタイムを同梱しています。
+
+サイドバーから 한국어・日本語・English を選択できます。Windows タスクスケジューラで予約整理し、対象ファイルをごみ箱に移します。設定と復元履歴は `%LOCALAPPDATA%\Spacekeeper` に保存します。ローカルの固定 NTFS ドライブに対応しています。ARM64 はクロスビルド済みですが、実機での動作は未検証です。配布ファイルはコード署名されていません。
+
+詳細は [Windows ガイド](windows/README.md) を参照してください。以下は macOS 版の説明です。
 
 ## ビルドと起動
 

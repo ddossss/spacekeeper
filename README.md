@@ -2,7 +2,15 @@
 
 **[한국어](README.ko.md) · [日本語](README.ja.md) · English**
 
-A native macOS app for reviewing disk clutter, finding exact duplicate files, and scheduling conservative cache cleanup. Built with SwiftUI, Foundation, and CryptoKit. No account, server, analytics SDK, or third-party runtime dependencies.
+A native macOS and Windows app for reviewing disk clutter, finding exact duplicate files, and scheduling conservative cache cleanup. SwiftUI on macOS; WPF and .NET 10 on Windows. No account, server or analytics SDK.
+
+## Windows download
+
+Download **Spacekeeper-win-x64.zip** or **Spacekeeper-win-arm64.zip** from [Releases](https://github.com/ddossss/spacekeeper/releases), extract the entire ZIP, and run **Spacekeeper.exe**. Windows 10/11; .NET is included. Select 한국어, 日本語 or English in the sidebar.
+
+Windows uses Task Scheduler, the Windows Recycle Bin, and `%LOCALAPPDATA%\Spacekeeper` for local state. Supports fixed local NTFS volumes. See the [Windows guide](windows/README.md) for building, scheduling, recovery and platform boundaries. ARM64 packages are cross-compiled; native ARM64 execution has not been tested. Packages are unsigned.
+
+The instructions below describe the macOS version.
 
 ## Build and run
 

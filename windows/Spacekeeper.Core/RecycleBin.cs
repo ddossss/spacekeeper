@@ -127,6 +127,9 @@ interface IFileOperation
     void SetProgressDialog(IntPtr dialog);
     void SetProperties(IntPtr properties);
     void SetOwnerWindow(IntPtr window);
+    // Keep every SDK vtable slot, including methods this app does not invoke.
+    void ApplyPropertiesToItem(IShellItem item);
+    void ApplyPropertiesToItems([MarshalAs(UnmanagedType.IUnknown)] object items);
     void RenameItem(IShellItem item, [MarshalAs(UnmanagedType.LPWStr)] string name, IProgressSink sink);
     void RenameItems([MarshalAs(UnmanagedType.IUnknown)] object items, [MarshalAs(UnmanagedType.LPWStr)] string name);
     void MoveItem(IShellItem item, IShellItem destination, [MarshalAs(UnmanagedType.LPWStr)] string name, IProgressSink sink);
