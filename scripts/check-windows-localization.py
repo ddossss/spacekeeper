@@ -5,14 +5,14 @@ import pathlib
 import re
 
 root = pathlib.Path(__file__).resolve().parent.parent
-catalog = json.loads((root / 'Sources/SpacekeeperCore/Resources/translations.json').read_text())
-catalog.update(json.loads((root / 'windows/Spacekeeper.Core/translations.json').read_text()))
+catalog = json.loads((root / 'Sources/SpacekeeperCore/Resources/translations.json').read_text(encoding='utf-8'))
+catalog.update(json.loads((root / 'windows/Spacekeeper.Core/translations.json').read_text(encoding='utf-8')))
 missing = set()
 for folder in ('Spacekeeper.Core', 'Spacekeeper.Windows'):
     for file in (root / 'windows' / folder).glob('*.cs'):
         if file.name.endswith('Validation.cs'):
             continue
-        for key in re.findall(r'"([^"\n]*[가-힣][^"\n]*)"', file.read_text()):
+        for key in re.findall(r'"([^"\n]*[가-힣][^"\n]*)"', file.read_text(encoding='utf-8')):
             if key not in catalog and key not in {'한국어', '일'}:
                 missing.add(key)
 for days in (7, 14, 30, 90):

@@ -60,10 +60,15 @@ public sealed class Cleaner(Store store, IRecycler recycler, Func<List<CacheRule
             {
                 var receipt = recycler.Recycle(entry.Path);
                 item.RecyclePath = receipt.Path; item.RecycleParsingName = receipt.ParsingName;
-                item.RecycleStamp = FileStamp.Read(receipt.Path); moved += entry.Bytes;
+                item.RecycleStamp = FileStamp.Read(receipt.Path); moved += entry.Bytes; item.Pending = false;
             }
-            catch (Exception e) { item.Error = Message.Error(e); }
-            item.Pending = false; store.SaveItem(record.ID, item);
+            catch (Exception e)
+            {
+                item.Error = Message.Error(e);
+                // Shell may have moved the file before a callback/receipt failed. Do not claim it stayed put.
+                item.Pending = item.RecyclePath == null && !File.Exists(entry.Path);
+            }
+            store.SaveItem(record.ID, item);
         }
         store.SaveHeader(record); return record;
     }

@@ -48,6 +48,7 @@ Test("cache age, running app, schedule cap and disabled schedule", () => {
 });
 Test("unsupported cache and running app remain untouched", () => { var entry=Put(Folder(),"a"); var (s,r,_)=Setup(); var c=new Cleaner(s,r,()=>[],_=>false); Check(c.Clean(new(CleanupKind.Cache,[entry]),default).MovedCount==0); });
 Test("cancellation does not move files", () => { var entry=Put(Folder(),"a"); var (_,r,c)=Setup(); Check(c.Clean(new(CleanupKind.Large,[entry]),new CancellationToken(true)).MovedCount==0 && r.Count==0); });
+Test("missing receipt preserves uncertain movement in journal", () => { var entry=Put(Folder(),"a"); var s=new Store(Folder()); var c=new Cleaner(s,new MissingReceiptRecycler(Folder())); var result=c.Clean(new(CleanupKind.Large,[entry]),default); Check(result.Items.Single().Pending && result.Items.Single().Error!=null && s.History().Single().Items.Single().Pending); });
 if (OperatingSystem.IsWindows())
 {
     Test("NTFS hard links are excluded", () => { var f=Folder(); var entry=Put(f,"a"); Check(WinNative.CreateHardLink(Path.Combine(f,"b"),entry.Path,IntPtr.Zero)); Check(Scanner.Walk([f],default).Files.Count==0); });
@@ -72,4 +73,9 @@ static class WinNative
 {
     [DllImport("kernel32.dll",EntryPoint="CreateHardLinkW",CharSet=CharSet.Unicode,SetLastError=true)] [return:MarshalAs(UnmanagedType.Bool)]
     public static extern bool CreateHardLink(string name,string existing,IntPtr security);
+}
+sealed class MissingReceiptRecycler(string folder) : IRecycler
+{
+    public RecycleReceipt Recycle(string path) { File.Move(path,Path.Combine(folder,"moved")); throw new IOException("Receipt unavailable"); }
+    public string Restore(HistoryItem item) => throw new NotSupportedException();
 }
