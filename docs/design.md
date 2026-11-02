@@ -1,6 +1,6 @@
 # Spacekeeper 디자인
 
-macOS의 로컬 파일 정리를 위한 한국어 네이티브 앱. 핵심은 사용자가 무엇을 남기고 무엇을 휴지통으로 보낼지 이해하는 것이다.
+macOS·Windows의 로컬 파일 정리를 위한 다국어 네이티브 앱. 핵심은 사용자가 무엇을 남기고 무엇을 휴지통으로 보낼지 이해하는 것이다. 아래 시각 디자인은 macOS 기준이며, Windows는 같은 정보 구조를 Segoe UI와 WPF 컨트롤로 구현한다.
 
 - 바탕: mist #F5F7F8, surface #FFFFFF, ink #182C32, muted #60747C, teal #087F83, caution #9C5B12. 다크 모드는 시스템 색상을 사용한다.
 - 서체: macOS 시스템 서체. 제목 28pt semibold, 본문 13pt, 파일 경로 11pt. 숫자는 monospacedDigit으로 정렬한다.
