@@ -1,0 +1,3 @@
+"NSDocumentsFolderUsageDescription" = "選択した書類フォルダ内の重複ファイルと大容量ファイルを検索します。";
+"NSDownloadsFolderUsageDescription" = "選択したダウンロードフォルダ内の重複ファイルと大容量ファイルを検索します。";
+"NSDesktopFolderUsageDescription" = "選択したデスクトップフォルダ内の重複ファイルと大容量ファイルを検索します。";

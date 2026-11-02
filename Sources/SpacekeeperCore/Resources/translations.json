@@ -1,0 +1,822 @@
+{
+  " {0}개 항목은 건너뛰었습니다. 기록에서 이유를 확인하세요.": {
+    "en": " Items skipped: {0}. See history for details.",
+    "ja": " {0}件をスキップしました。理由は履歴で確認できます。"
+  },
+  "%02d분": {
+    "en": "%02d min",
+    "ja": "%02d分"
+  },
+  "%02d시": {
+    "en": "%02d h",
+    "ja": "%02d時"
+  },
+  "/Applications와 사용자 Applications 폴더의 앱을 표시합니다. 제거가 필요하면 Finder에서 앱을 확인한 뒤 휴지통으로 이동하세요.": {
+    "en": "Apps in /Applications and your Applications folder are listed here. To uninstall an app, review it in Finder and move it to Trash.",
+    "ja": "/ApplicationsとユーザーのApplicationsフォルダ内のアプリを表示します。削除する場合はFinderで確認してからゴミ箱へ移動してください。"
+  },
+  "14일": {
+    "en": "14 days",
+    "ja": "14日"
+  },
+  "1회 정리 한도": {
+    "en": "Limit per cleanup",
+    "ja": "1回の整理上限"
+  },
+  "1회 정리 한도에 도달해 나머지 파일은 보관했습니다.": {
+    "en": "The cleanup limit was reached. Remaining files were kept.",
+    "ja": "整理の上限に達したため、残りのファイルは保持しました。"
+  },
+  "20만 항목 제한에 도달했습니다. 폴더를 좁혀서 다시 검사해 주세요. 아래는 일부 결과입니다.": {
+    "en": "The 200,000-item limit was reached. These results are partial. Scan a smaller folder to continue.",
+    "ja": "20万項目の上限に達しました。以下は一部の結果です。対象フォルダを絞って再スキャンしてください。"
+  },
+  "30일": {
+    "en": "30 days",
+    "ja": "30日"
+  },
+  "7일": {
+    "en": "7 days",
+    "ja": "7日"
+  },
+  "90일": {
+    "en": "90 days",
+    "ja": "90日"
+  },
+  "Finder 휴지통에서 직접 복원해 주세요.": {
+    "en": "Restore this file directly from Trash in Finder.",
+    "ja": "Finderのゴミ箱から直接復元してください。"
+  },
+  "Finder에서 보기": {
+    "en": "Show in Finder",
+    "ja": "Finderで表示"
+  },
+  "Mac 저장 공간": {
+    "en": "Mac storage",
+    "ja": "Macのストレージ"
+  },
+  "Mac에 여유를, 파일에는 제자리를.": {
+    "en": "More room on your Mac. A place for every file.",
+    "ja": "Macにゆとりを、ファイルに居場所を。"
+  },
+  "Mac의 현지 시간 기준": {
+    "en": "Mac local time",
+    "ja": "Macの現地時刻"
+  },
+  "macOS 예약 작업이 등록되어 있습니다.": {
+    "en": "A macOS scheduled task is registered.",
+    "ja": "macOSに定期実行タスクが登録されています。"
+  },
+  "{0} 검사 · {1}": {
+    "en": "Scanned at {0} · {1}",
+    "ja": "{0}にスキャン · {1}"
+  },
+  "{0} 선택": {
+    "en": "Select {0}",
+    "ja": "{0}を選択"
+  },
+  "{0} 캐시 확인 중…": {
+    "en": "Checking {0} cache…",
+    "ja": "{0}のキャッシュを確認中…"
+  },
+  "{0}: 20만 항목 제한에 도달했습니다. 일부 결과입니다.": {
+    "en": "{0}: the 200,000-item limit was reached. Results are partial.",
+    "ja": "{0}：20万項目の上限に達しました。一部の結果を表示しています。"
+  },
+  "{0}개 사본": {
+    "en": "Copies: {0}",
+    "ja": "コピー {0}個"
+  },
+  "{0}개 선택 · {1}": {
+    "en": "Selected: {0} · {1}",
+    "ja": "{0}個を選択 · {1}"
+  },
+  "{0}개 앱": {
+    "en": "Apps: {0}",
+    "ja": "アプリ {0}個"
+  },
+  "{0}개 중복 그룹": {
+    "en": "Duplicate groups: {0}",
+    "ja": "重複グループ {0}件"
+  },
+  "{0}개 파일": {
+    "en": "Files: {0}",
+    "ja": "ファイル {0}個"
+  },
+  "{0}개 파일 · {1}": {
+    "en": "Files: {0} · {1}",
+    "ja": "ファイル {0}個 · {1}"
+  },
+  "{0}개 파일 확인 · 제외 {1}개": {
+    "en": "Files checked: {0} · Skipped: {1}",
+    "ja": "{0}個のファイルを確認 · {1}個を除外"
+  },
+  "{0}개 파일 확인 중…": {
+    "en": "Checking files: {0}…",
+    "ja": "{0}個のファイルを確認中…"
+  },
+  "{0}개 파일, {1}을 휴지통으로 옮겼습니다.{2}\n휴지통을 비우면 디스크 공간이 확보됩니다.": {
+    "en": "Files moved to Trash: {0} ({1}).{2}\nEmpty Trash to reclaim disk space.",
+    "ja": "{0}個のファイル（{1}）をゴミ箱へ移動しました。{2}\nゴミ箱を空にすると空き容量が増えます。"
+  },
+  "{0}개 파일을 복원하지 못했습니다. 휴지통과 정리 기록의 상세 내용을 확인하세요.": {
+    "en": "Files that could not be restored: {0}. Check Trash and the details in cleanup history.",
+    "ja": "{0}個のファイルを復元できませんでした。ゴミ箱と整理履歴の詳細を確認してください。"
+  },
+  "{0}번의 정리 기록": {
+    "en": "Cleanup records: {0}",
+    "ja": "整理履歴 {0}件"
+  },
+  "가능한 캐시 선택": {
+    "en": "Select eligible caches",
+    "ja": "整理できるキャッシュを選択"
+  },
+  "각 중복 그룹에서 최소 한 파일은 남겨야 합니다.": {
+    "en": "Keep at least one file in each duplicate group.",
+    "ja": "各重複グループに少なくとも1個のファイルを残してください。"
+  },
+  "같은 내용의 파일,\n한 사본이면 충분해요.": {
+    "en": "Keep one copy of files\nwith identical contents.",
+    "ja": "内容が同じファイルは、\n1個だけ残してすっきり。"
+  },
+  "개요": {
+    "en": "Overview",
+    "ja": "概要"
+  },
+  "검사 결과에 없는 파일이 선택되었습니다.": {
+    "en": "The selection includes a file outside the scan results.",
+    "ja": "スキャン結果にないファイルが選択されています。"
+  },
+  "검사 시작": {
+    "en": "Start scan",
+    "ja": "スキャン開始"
+  },
+  "검사 제외 목록에 있는 파일입니다.": {
+    "en": "This file is on your exclusion list.",
+    "ja": "このファイルは除外リストに含まれています。"
+  },
+  "검사 폴더 추가": {
+    "en": "Add scan folder",
+    "ja": "スキャン対象を追加"
+  },
+  "검사 폴더에서 제외": {
+    "en": "Remove scan folder",
+    "ja": "スキャン対象から外す"
+  },
+  "검사 후 파일이 변경되었습니다. 다시 검사해 주세요: {0}": {
+    "en": "This file changed after scanning. Scan again: {0}",
+    "ja": "スキャン後にファイルが変更されました。再スキャンしてください：{0}"
+  },
+  "검사·정리에서 제외할 폴더": {
+    "en": "Folders excluded from scans and cleanup",
+    "ja": "スキャン・整理から除外するフォルダ"
+  },
+  "검사를 준비하고 있습니다…": {
+    "en": "Preparing to scan…",
+    "ja": "スキャンの準備中…"
+  },
+  "검사를 취소했습니다.": {
+    "en": "Scan canceled.",
+    "ja": "スキャンをキャンセルしました。"
+  },
+  "검사에서 제외": {
+    "en": "Exclude from scans",
+    "ja": "スキャンから除外"
+  },
+  "검사한 폴더 밖의 파일입니다.": {
+    "en": "This file is outside the scanned folder.",
+    "ja": "このファイルはスキャンしたフォルダの外にあります。"
+  },
+  "검사할 수 있는 파일 중 내용이 같은 파일을 찾지 못했습니다.": {
+    "en": "No files with identical contents were found among the files we could scan.",
+    "ja": "スキャン可能なファイルの中に、内容が同じファイルはありませんでした。"
+  },
+  "검사할 폴더": {
+    "en": "Folders to scan",
+    "ja": "スキャンするフォルダ"
+  },
+  "검사할 폴더를 선택해 주세요.": {
+    "en": "Choose a folder to scan.",
+    "ja": "スキャンするフォルダを選択してください。"
+  },
+  "검사할 항목을 선택해 주세요.": {
+    "en": "Choose what to scan.",
+    "ja": "スキャンする項目を選択してください。"
+  },
+  "공간을 많이 쓰는 파일부터\n차근차근 살펴보세요.": {
+    "en": "Start with the files\ntaking up the most space.",
+    "ja": "容量の大きいファイルから\n順番に確認しましょう。"
+  },
+  "금요일": {
+    "en": "Friday",
+    "ja": "金曜日"
+  },
+  "기록 보기": {
+    "en": "View history",
+    "ja": "履歴を見る"
+  },
+  "나의 Mac 정리 도구": {
+    "en": "A tidier Mac, your way",
+    "ja": "Macを自分らしく整理"
+  },
+  "남은 작업을 취소했습니다.": {
+    "en": "Remaining tasks were canceled.",
+    "ja": "残りの処理をキャンセルしました。"
+  },
+  "내 Mac 안에서만": {
+    "en": "Only on your Mac",
+    "ja": "すべてMacの中で"
+  },
+  "내용이 완전히 같은 파일을 찾고, 남길 사본을 고르세요.": {
+    "en": "Find files with identical contents and choose which copy to keep.",
+    "ja": "内容が完全に同じファイルを探し、残すコピーを選びましょう。"
+  },
+  "다른 정리 작업이 진행 중입니다. 잠시 후 다시 시도해 주세요.": {
+    "en": "Another cleanup is running. Try again shortly.",
+    "ja": "別の整理処理が実行中です。少し待ってから再試行してください。"
+  },
+  "다시 검사": {
+    "en": "Scan again",
+    "ja": "再スキャン"
+  },
+  "다시 생성할 수 있는 오래된 앱 캐시를 정리하세요.": {
+    "en": "Clear old app caches that can be regenerated.",
+    "ja": "再生成できる古いアプリキャッシュを整理しましょう。"
+  },
+  "대용량 파일": {
+    "en": "Large files",
+    "ja": "大容量ファイル"
+  },
+  "대용량 파일 정리": {
+    "en": "Large file cleanup",
+    "ja": "大容量ファイルの整理"
+  },
+  "되돌릴 수 있는 정리": {
+    "en": "Cleanup you can undo",
+    "ja": "元に戻せる整理"
+  },
+  "로그인 항목 열기": {
+    "en": "Open Login Items",
+    "ja": "ログイン項目を開く"
+  },
+  "마지막 사용·수정 이후 경과 일수": {
+    "en": "Days since last access or modification",
+    "ja": "最後の使用・変更からの日数"
+  },
+  "매일": {
+    "en": "Daily",
+    "ja": "毎日"
+  },
+  "매주": {
+    "en": "Weekly",
+    "ja": "毎週"
+  },
+  "목요일": {
+    "en": "Thursday",
+    "ja": "木曜日"
+  },
+  "미리보기에는 100개를 표시합니다. 그룹 선택은 전체 {0}개에 적용됩니다.": {
+    "en": "Previewing 100 files. Selecting the group applies to all {0} files.",
+    "ja": "プレビューは100個まで表示します。グループの選択は全{0}個に適用されます。"
+  },
+  "변경 사항은 저장한 뒤 적용됩니다.": {
+    "en": "Changes take effect after you save.",
+    "ja": "変更は保存後に適用されます。"
+  },
+  "보관": {
+    "en": "Keep",
+    "ja": "保持"
+  },
+  "보관 기간": {
+    "en": "Retention period",
+    "ja": "保持期間"
+  },
+  "복원": {
+    "en": "Restore",
+    "ja": "復元"
+  },
+  "복원 작업 완료": {
+    "en": "Restore finished",
+    "ja": "復元処理が完了しました"
+  },
+  "복원됨": {
+    "en": "Restored",
+    "ja": "復元済み"
+  },
+  "분": {
+    "en": "Minute",
+    "ja": "分"
+  },
+  "사용 가능": {
+    "en": "available",
+    "ja": "使用可能"
+  },
+  "사용 중 {0}": {
+    "en": "Used {0}",
+    "ja": "使用中 {0}"
+  },
+  "새로 고침": {
+    "en": "Refresh",
+    "ja": "更新"
+  },
+  "선택 항목 검토": {
+    "en": "Review selection",
+    "ja": "選択項目を確認"
+  },
+  "선택 해제": {
+    "en": "Clear selection",
+    "ja": "選択を解除"
+  },
+  "선택한 파일은 검토 후 휴지통으로 이동합니다.": {
+    "en": "Review selected files before moving them to Trash.",
+    "ja": "選択したファイルは確認後にゴミ箱へ移動します。"
+  },
+  "선택한 파일은 휴지통으로 이동합니다. 정리 기록에서 복원할 수 있어요.": {
+    "en": "Selected files go to Trash. Restore them from cleanup history.",
+    "ja": "選択したファイルはゴミ箱へ移動します。整理履歴から復元できます。"
+  },
+  "선택한 파일을 확인하고 휴지통으로 옮기는 중…": {
+    "en": "Checking selected files and moving them to Trash…",
+    "ja": "選択したファイルを確認し、ゴミ箱へ移動中…"
+  },
+  "설정 또는 기록을 읽지 못했습니다: {0}": {
+    "en": "Could not read settings or history: {0}",
+    "ja": "設定または履歴を読み込めませんでした：{0}"
+  },
+  "설정 열기": {
+    "en": "Open settings",
+    "ja": "設定を開く"
+  },
+  "설정 저장": {
+    "en": "Save settings",
+    "ja": "設定を保存"
+  },
+  "설정 저장 완료": {
+    "en": "Settings saved",
+    "ja": "設定を保存しました"
+  },
+  "설정을 저장했습니다. 정기 청소는 꺼져 있습니다.": {
+    "en": "Settings saved. Scheduled cleanup is off.",
+    "ja": "設定を保存しました。定期整理はオフです。"
+  },
+  "설치 앱": {
+    "en": "Installed apps",
+    "ja": "インストール済みアプリ"
+  },
+  "설치된 앱을 확인하고, 필요 없는 앱은 Finder에서 관리하세요.": {
+    "en": "Review installed apps and manage unwanted apps in Finder.",
+    "ja": "インストール済みアプリを確認し、不要なアプリはFinderで管理しましょう。"
+  },
+  "수요일": {
+    "en": "Wednesday",
+    "ja": "水曜日"
+  },
+  "시": {
+    "en": "Hour",
+    "ja": "時"
+  },
+  "시스템·라이브러리·앱 내부는 검사 대상에서 제외합니다. 문서 폴더를 선택해 주세요.": {
+    "en": "System folders, libraries, and app contents are excluded. Choose a documents folder.",
+    "ja": "システム、ライブラリ、アプリ内部は対象外です。書類フォルダを選択してください。"
+  },
+  "시작 프로그램이 많다면 로그인 항목을 확인하세요. 변경은 macOS 설정에서 직접 할 수 있습니다.": {
+    "en": "Review Login Items if many apps open at startup. Make changes directly in macOS settings.",
+    "ja": "起動時に開くアプリが多い場合は、ログイン項目を確認しましょう。macOSの設定から変更できます。"
+  },
+  "실행 시간": {
+    "en": "Run at",
+    "ja": "実行時刻"
+  },
+  "실행 중 · 앱 종료 후 검사": {
+    "en": "Running · Quit the app to scan",
+    "ja": "実行中 · アプリ終了後にスキャン"
+  },
+  "심볼릭 링크 경로는 제외합니다: {0}": {
+    "en": "Symbolic link paths are excluded: {0}",
+    "ja": "シンボリックリンクのパスは除外します：{0}"
+  },
+  "아직 예약 작업이 등록되지 않았습니다.": {
+    "en": "No scheduled task is registered yet.",
+    "ja": "定期実行タスクはまだ登録されていません。"
+  },
+  "아직 정리 기록이 없습니다": {
+    "en": "No cleanup history yet",
+    "ja": "整理履歴はまだありません"
+  },
+  "앱 검색": {
+    "en": "Search apps",
+    "ja": "アプリを検索"
+  },
+  "앱 실행 파일을 찾을 수 없습니다. 앱을 다시 빌드해 주세요.": {
+    "en": "The app executable was not found. Build the app again.",
+    "ja": "アプリの実行ファイルが見つかりません。アプリを再ビルドしてください。"
+  },
+  "앱을 종료해도 로그인한 동안 실행됩니다. 잠자기 중 놓친 예약은 깨어난 뒤 실행될 수 있습니다. 중복 파일과 개인 문서는 자동으로 정리하지 않습니다. 앱 위치를 옮겼다면 설정을 다시 저장하세요.": {
+    "en": "Runs while you are logged in, even when this app is closed. A missed schedule may run after waking from sleep. Duplicate files and personal documents are never cleaned automatically. Save settings again if you move the app.",
+    "ja": "アプリを終了しても、ログイン中は実行されます。スリープ中に逃した実行は、復帰後に行われることがあります。重複ファイルや個人の書類は自動で整理しません。アプリの場所を変更した場合は設定を保存し直してください。"
+  },
+  "어떤 파일을 정리했는지 확인하고 원래 위치로 복원하세요.": {
+    "en": "Review cleaned files and restore them to their original locations.",
+    "ja": "整理したファイルを確認し、元の場所に復元できます。"
+  },
+  "예약 설정을 저장하는 중…": {
+    "en": "Saving schedule settings…",
+    "ja": "定期実行の設定を保存中…"
+  },
+  "예약 작업 등록에 실패했습니다. 시스템 설정의 로그인 항목을 확인해 주세요. {0}": {
+    "en": "Could not register the scheduled task. Check Login Items in System Settings. {0}",
+    "ja": "定期実行タスクを登録できませんでした。システム設定のログイン項目を確認してください。{0}"
+  },
+  "오래된 캐시를 골라\n가볍게 정리하세요.": {
+    "en": "Review old caches\nand clear the clutter.",
+    "ja": "古いキャッシュを選んで、\nすっきり整理。"
+  },
+  "오래된 캐시부터 확인해 볼까요?": {
+    "en": "Start with old caches",
+    "ja": "古いキャッシュを確認しましょう"
+  },
+  "요일": {
+    "en": "Day of week",
+    "ja": "曜日"
+  },
+  "원래 위치로 복원하는 중…": {
+    "en": "Restoring to original locations…",
+    "ja": "元の場所に復元中…"
+  },
+  "원래 위치로 복원할까요?": {
+    "en": "Restore to original locations?",
+    "ja": "元の場所に復元しますか？"
+  },
+  "원래 위치에 같은 이름의 파일이 있어 덮어쓰지 않았습니다.": {
+    "en": "A file with the same name already exists at the original location. It was not overwritten.",
+    "ja": "元の場所に同名のファイルがあるため、上書きしませんでした。"
+  },
+  "월요일": {
+    "en": "Monday",
+    "ja": "月曜日"
+  },
+  "이 사본 보관": {
+    "en": "Keep this copy",
+    "ja": "このコピーを保持"
+  },
+  "이동되지 않음": {
+    "en": "Not moved",
+    "ja": "未移動"
+  },
+  "이름이 달라도, 내용이 같다면": {
+    "en": "Different names, identical contents",
+    "ja": "名前が違っても、内容が同じなら"
+  },
+  "일반 로컬 파일만 처리합니다: {0}": {
+    "en": "Only regular local files are supported: {0}",
+    "ja": "通常のローカルファイルのみ処理できます：{0}"
+  },
+  "일요일": {
+    "en": "Sunday",
+    "ja": "日曜日"
+  },
+  "자동으로, 조심스럽게": {
+    "en": "Automatic, with care",
+    "ja": "自動で、慎重に"
+  },
+  "전체 {0}": {
+    "en": "Total {0}",
+    "ja": "合計 {0}"
+  },
+  "전체 {0} 중 {1} 사용 가능": {
+    "en": "{1} available out of {0}",
+    "ja": "合計{0}のうち{1}が使用可能"
+  },
+  "접근 권한이 없는 폴더는 건너뜁니다. 필요한 폴더를 직접 선택하거나 macOS 개인정보 보호 설정에서 접근을 허용한 뒤 다시 검사하세요.": {
+    "en": "Folders without access permission are skipped. Choose the folder directly or allow access in macOS Privacy settings, then scan again.",
+    "ja": "アクセス権のないフォルダはスキップします。対象フォルダを直接選ぶか、macOSのプライバシー設定でアクセスを許可してから再スキャンしてください。"
+  },
+  "접근할 수 없음": {
+    "en": "Access unavailable",
+    "ja": "アクセス不可"
+  },
+  "정기 청소": {
+    "en": "Scheduled cleanup",
+    "ja": "定期整理"
+  },
+  "정기 청소 사용": {
+    "en": "Enable scheduled cleanup",
+    "ja": "定期整理を有効にする"
+  },
+  "정기 청소 설정 범위를 확인해 주세요.": {
+    "en": "Check the scheduled cleanup settings for invalid values.",
+    "ja": "定期整理の設定値を確認してください。"
+  },
+  "정기 청소 설정…": {
+    "en": "Scheduled cleanup settings…",
+    "ja": "定期整理の設定…"
+  },
+  "정기 청소를 켰습니다. Mac에 로그인한 동안 앱을 종료해도 예약이 실행됩니다.": {
+    "en": "Scheduled cleanup is on. It runs while you are logged in, even when the app is closed.",
+    "ja": "定期整理をオンにしました。Macにログインしている間は、アプリを終了しても実行されます。"
+  },
+  "정기 캐시 청소": {
+    "en": "Scheduled cache cleanup",
+    "ja": "キャッシュの定期整理"
+  },
+  "정기 캐시 청소가 꺼져 있습니다.": {
+    "en": "Scheduled cache cleanup is off.",
+    "ja": "キャッシュの定期整理はオフです。"
+  },
+  "정기 캐시 청소가 켜져 있습니다": {
+    "en": "Scheduled cache cleanup is on",
+    "ja": "キャッシュの定期整理はオンです"
+  },
+  "정기 캐시 청소를 설정하세요": {
+    "en": "Set up scheduled cache cleanup",
+    "ja": "キャッシュの定期整理を設定"
+  },
+  "정리 가능 {0}": {
+    "en": "Eligible for cleanup: {0}",
+    "ja": "整理可能 {0}"
+  },
+  "정리 기록": {
+    "en": "Cleanup history",
+    "ja": "整理履歴"
+  },
+  "정리 기록을 디스크에 저장할 수 없습니다.": {
+    "en": "Could not save cleanup history to disk.",
+    "ja": "整理履歴をディスクに保存できません。"
+  },
+  "정리 기록을 저장할 수 없습니다.": {
+    "en": "Could not save cleanup history.",
+    "ja": "整理履歴を保存できません。"
+  },
+  "정리 기록을 찾을 수 없습니다.": {
+    "en": "Cleanup history was not found.",
+    "ja": "整理履歴が見つかりません。"
+  },
+  "정리 기록이 손상되었습니다: {0}": {
+    "en": "Cleanup history is corrupted: {0}",
+    "ja": "整理履歴が破損しています：{0}"
+  },
+  "정리 완료": {
+    "en": "Cleanup finished",
+    "ja": "整理が完了しました"
+  },
+  "정리 잠금 파일을 열 수 없습니다.": {
+    "en": "Could not open the cleanup lock file.",
+    "ja": "整理のロックファイルを開けません。"
+  },
+  "정리 한도": {
+    "en": "Cleanup limit",
+    "ja": "整理の上限"
+  },
+  "정리를 완료하지 못했습니다.": {
+    "en": "Cleanup could not be completed.",
+    "ja": "整理を完了できませんでした。"
+  },
+  "정리할 오래된 캐시 없음": {
+    "en": "No old caches to clean",
+    "ja": "整理する古いキャッシュはありません"
+  },
+  "정리할 오래된 캐시가 없거나 앱이 실행 중이었습니다.": {
+    "en": "There were no old caches to clean, or the apps were running.",
+    "ja": "整理する古いキャッシュがないか、アプリが実行中でした。"
+  },
+  "정리할 파일을 선택해 주세요.": {
+    "en": "Select files to clean.",
+    "ja": "整理するファイルを選択してください。"
+  },
+  "정해진 시간에 오래된 캐시를 휴지통으로 옮깁니다.": {
+    "en": "Move old caches to Trash on a schedule.",
+    "ja": "決まった時刻に古いキャッシュをゴミ箱へ移動します。"
+  },
+  "제외 해제": {
+    "en": "Remove exclusion",
+    "ja": "除外を解除"
+  },
+  "제외할 개인 폴더를 추가할 수 있습니다.": {
+    "en": "Add personal folders you want to exclude.",
+    "ja": "除外したい個人フォルダを追加できます。"
+  },
+  "조건에 맞는 큰 파일이 없습니다": {
+    "en": "No large files match your criteria",
+    "ja": "条件に合う大きなファイルはありません"
+  },
+  "주기": {
+    "en": "Frequency",
+    "ja": "頻度"
+  },
+  "중복 파일": {
+    "en": "Duplicate files",
+    "ja": "重複ファイル"
+  },
+  "중복 파일 정리": {
+    "en": "Duplicate file cleanup",
+    "ja": "重複ファイルの整理"
+  },
+  "중복 파일이 없습니다": {
+    "en": "No duplicate files found",
+    "ja": "重複ファイルはありません"
+  },
+  "지원 앱: Chrome, Edge, Firefox, Brave, Spotify, VS Code\n실행 중인 앱은 종료한 뒤 검사해 주세요.": {
+    "en": "Supported apps: Chrome, Edge, Firefox, Brave, Spotify, VS Code\nQuit running apps before scanning their caches.",
+    "ja": "対応アプリ：Chrome、Edge、Firefox、Brave、Spotify、VS Code\n実行中のアプリを終了してからスキャンしてください。"
+  },
+  "지원하지 않는 캐시이거나 앱이 실행 중입니다: {0}": {
+    "en": "This cache is unsupported or its app is running: {0}",
+    "ja": "未対応のキャッシュ、またはアプリが実行中です：{0}"
+  },
+  "처리 중단 · Finder에서 확인": {
+    "en": "Interrupted · Check Finder",
+    "ja": "処理中断 · Finderで確認"
+  },
+  "청소 주기": {
+    "en": "Cleanup frequency",
+    "ja": "整理の頻度"
+  },
+  "청소할 앱 캐시": {
+    "en": "App caches to clean",
+    "ja": "整理するアプリキャッシュ"
+  },
+  "초과 파일은 다음 예약에 다시 확인": {
+    "en": "Remaining files are checked at the next run",
+    "ja": "上限を超えたファイルは次回再確認"
+  },
+  "최근 {0}일 동안 수정하거나 사용한 캐시는 보관합니다. 브라우저 방문 기록·쿠키·비밀번호는 정리 대상에 포함하지 않습니다.": {
+    "en": "Caches accessed or modified in the last {0} days are kept. Browsing history, cookies, and passwords are not included.",
+    "ja": "過去{0}日以内に使用・変更したキャッシュは保持します。閲覧履歴、Cookie、パスワードは整理しません。"
+  },
+  "최근 사용한 캐시는 보관합니다: {0}": {
+    "en": "Recently used caches are kept: {0}",
+    "ja": "最近使用したキャッシュは保持します：{0}"
+  },
+  "최근 사용한 캐시와 실행 중인 앱은 보관합니다.": {
+    "en": "Recently used caches and running apps are left alone.",
+    "ja": "最近使用したキャッシュと実行中のアプリは保持します。"
+  },
+  "최소 크기를 낮추거나 다른 폴더를 검사해 보세요.": {
+    "en": "Lower the minimum size or scan another folder.",
+    "ja": "最小サイズを小さくするか、別のフォルダをスキャンしてください。"
+  },
+  "최소 파일 크기": {
+    "en": "Minimum file size",
+    "ja": "最小ファイルサイズ"
+  },
+  "추가 사본 {0}": {
+    "en": "Extra copies: {0}",
+    "ja": "余分なコピー {0}"
+  },
+  "추가 사본 선택": {
+    "en": "Select extra copies",
+    "ja": "余分なコピーを選択"
+  },
+  "취소": {
+    "en": "Cancel",
+    "ja": "キャンセル"
+  },
+  "캐시 검사 완료": {
+    "en": "Cache scan finished",
+    "ja": "キャッシュのスキャンが完了しました"
+  },
+  "캐시 보관 기간": {
+    "en": "Keep caches for",
+    "ja": "キャッシュ保持期間"
+  },
+  "캐시 없음": {
+    "en": "No cache found",
+    "ja": "キャッシュなし"
+  },
+  "캐시 정리": {
+    "en": "Cache cleanup",
+    "ja": "キャッシュ整理"
+  },
+  "캐시는 최소 7일 보관해야 합니다.": {
+    "en": "Caches must be kept for at least 7 days.",
+    "ja": "キャッシュは少なくとも7日間保持してください。"
+  },
+  "크기가 큰 순서대로 표시합니다.\n필요 없는 파일인지 확인한 뒤 직접 선택해 주세요.": {
+    "en": "Files are listed largest first.\nReview each file before selecting it for cleanup.",
+    "ja": "サイズの大きい順に表示します。\n不要なファイルか確認してから選択してください。"
+  },
+  "큰 파일부터 살펴보면 공간을 더 쉽게 정리할 수 있어요.": {
+    "en": "Start with large files to make room more easily.",
+    "ja": "大きなファイルから確認すると、効率よく整理できます。"
+  },
+  "큰 파일을 먼저 살펴보세요": {
+    "en": "Take a look at large files first",
+    "ja": "大きなファイルから確認しましょう"
+  },
+  "클라우드 파일은 제외합니다.": {
+    "en": "Cloud files are excluded.",
+    "ja": "クラウドファイルは除外します。"
+  },
+  "토요일": {
+    "en": "Saturday",
+    "ja": "土曜日"
+  },
+  "파일 내용 비교 {0} / {1} · {2}": {
+    "en": "Comparing contents {0} / {1} · {2}",
+    "ja": "内容を比較中 {0} / {1} · {2}"
+  },
+  "파일 내용이 서로 다릅니다.": {
+    "en": "The file contents differ.",
+    "ja": "ファイルの内容が異なります。"
+  },
+  "파일 상세 {0}개": {
+    "en": "File details: {0}",
+    "ja": "ファイルの詳細 {0}個"
+  },
+  "파일 이름 또는 경로 검색": {
+    "en": "Search file names or paths",
+    "ja": "ファイル名・パスを検索"
+  },
+  "파일 읽기에 실패했습니다: {0}": {
+    "en": "Failed to read file: {0}",
+    "ja": "ファイルの読み込みに失敗しました：{0}"
+  },
+  "파일 전체 내용을 비교해 정확한 중복만 찾습니다.\n앱 내부, 라이브러리, 클라우드 파일, 심볼릭 링크는 제외합니다.": {
+    "en": "Full file contents are compared to find exact duplicates.\nApp contents, libraries, cloud files, and symbolic links are excluded.",
+    "ja": "ファイル全体の内容を比較し、完全な重複だけを検出します。\nアプリ内部、ライブラリ、クラウドファイル、シンボリックリンクは除外します。"
+  },
+  "파일당 {0}": {
+    "en": "{0} per file",
+    "ja": "1個あたり {0}"
+  },
+  "파일을 외부 서버로 전송하지 않습니다.": {
+    "en": "Your files are never sent to a server.",
+    "ja": "ファイルを外部サーバーへ送信しません。"
+  },
+  "파일을 원래 위치로 복원했습니다.": {
+    "en": "Files were restored to their original locations.",
+    "ja": "ファイルを元の場所に復元しました。"
+  },
+  "파일을 읽을 수 없습니다: {0}": {
+    "en": "Could not read file: {0}",
+    "ja": "ファイルを読み込めません：{0}"
+  },
+  "파일을 정리하면 이동한 경로와 복원 상태가 여기에 표시됩니다.": {
+    "en": "After a cleanup, moved file paths and restore status appear here.",
+    "ja": "整理すると、移動したファイルのパスと復元状態がここに表示されます。"
+  },
+  "파일을 확인해 주세요. 정리 기록에서 복원할 수 있으며, 휴지통을 비우기 전까지는 디스크 공간을 차지합니다.": {
+    "en": "Review these files. You can restore them from cleanup history. They still use disk space until you empty Trash.",
+    "ja": "ファイルを確認してください。整理履歴から復元できます。ゴミ箱を空にするまではディスク容量を使用します。"
+  },
+  "폴더 추가": {
+    "en": "Add folder",
+    "ja": "フォルダを追加"
+  },
+  "폴더를 선택하면 그 안의 파일만 검사합니다.": {
+    "en": "Only files inside the selected folders are scanned.",
+    "ja": "選択したフォルダ内のファイルだけをスキャンします。"
+  },
+  "폴더에 접근할 수 없습니다: {0}": {
+    "en": "Could not access folder: {0}",
+    "ja": "フォルダにアクセスできません：{0}"
+  },
+  "현재 파일 처리를 마친 뒤 중단합니다…": {
+    "en": "Stopping after the current file…",
+    "ja": "現在のファイルの処理後に停止します…"
+  },
+  "화요일": {
+    "en": "Tuesday",
+    "ja": "火曜日"
+  },
+  "확인": {
+    "en": "OK",
+    "ja": "OK"
+  },
+  "확인할 항목 {0}개": {
+    "en": "Items to review: {0}",
+    "ja": "確認が必要な項目 {0}件"
+  },
+  "휴지통 열기": {
+    "en": "Open Trash",
+    "ja": "ゴミ箱を開く"
+  },
+  "휴지통 위치를 확인할 수 없습니다. Finder에서 확인해 주세요.": {
+    "en": "Could not locate Trash. Check in Finder.",
+    "ja": "ゴミ箱の場所を確認できません。Finderで確認してください。"
+  },
+  "휴지통 이동 {0}개 · {1}": {
+    "en": "In Trash: {0} · {1}",
+    "ja": "ゴミ箱へ移動 {0}個 · {1}"
+  },
+  "휴지통에 남아 있는 파일을 복원합니다. 같은 이름의 파일이 있으면 덮어쓰지 않습니다.": {
+    "en": "Files still in Trash will be restored. Existing files with the same name will not be overwritten.",
+    "ja": "ゴミ箱に残っているファイルを復元します。同名のファイルがある場合は上書きしません。"
+  },
+  "휴지통으로 옮긴 파일은 아직 디스크 공간을 차지합니다. 정리를 확인한 뒤 Finder에서 휴지통을 비우세요. 비운 파일은 복원할 수 없습니다.": {
+    "en": "Files in Trash still use disk space. After reviewing your cleanup, empty Trash in Finder. Emptied files cannot be restored.",
+    "ja": "ゴミ箱内のファイルはまだディスク容量を使用しています。整理内容を確認してからFinderでゴミ箱を空にしてください。空にしたファイルは復元できません。"
+  },
+  "휴지통으로 이동": {
+    "en": "Move to Trash",
+    "ja": "ゴミ箱へ移動"
+  },
+  "휴지통으로 이동하기 전 확인": {
+    "en": "Review before moving to Trash",
+    "ja": "ゴミ箱への移動前に確認"
+  },
+  "언어": {
+    "en": "Language",
+    "ja": "言語"
+  }
+}

@@ -1,0 +1,3 @@
+"NSDocumentsFolderUsageDescription" = "선택한 문서 폴더에서 중복 파일과 대용량 파일을 찾습니다.";
+"NSDownloadsFolderUsageDescription" = "선택한 다운로드 폴더에서 중복 파일과 대용량 파일을 찾습니다.";
+"NSDesktopFolderUsageDescription" = "선택한 데스크탑 폴더에서 중복 파일과 대용량 파일을 찾습니다.";
