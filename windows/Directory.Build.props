@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)../codex-work/windows-obj/$(MSBuildProjectName)/</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(MSBuildThisFileDirectory)../codex-work/windows-bin/$(MSBuildProjectName)/</BaseOutputPath>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+</Project>

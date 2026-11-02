@@ -1,0 +1,38 @@
+<Window x:Class="Spacekeeper.Windows.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Spacekeeper" Width="1240" Height="850" MinWidth="1060" MinHeight="740" WindowStartupLocation="CenterScreen"
+        FontFamily="Segoe UI" FontSize="13" Background="#F5F7F8" Foreground="#182C32">
+  <Grid>
+    <Grid.ColumnDefinitions><ColumnDefinition Width="230"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+    <Border Grid.Column="0" Background="White" BorderBrush="#E0E7E9" BorderThickness="0,0,1,0">
+      <DockPanel Margin="18,28,18,18">
+        <StackPanel DockPanel.Dock="Top" Margin="8,0,0,30">
+          <TextBlock Text="◈  Spacekeeper" FontSize="23" FontWeight="SemiBold" Foreground="#087F83"/>
+          <TextBlock x:Name="Tagline" Margin="0,8,0,0" Foreground="#60747C" TextWrapping="Wrap"/>
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Bottom">
+          <TextBlock x:Name="LanguageLabel" Margin="0,0,0,6" FontWeight="SemiBold"/>
+          <ComboBox x:Name="LanguagePicker" SelectionChanged="LanguageChanged" AutomationProperties.AutomationId="LanguagePicker"/>
+          <TextBlock x:Name="Privacy" Margin="0,18,0,0" Foreground="#60747C" TextWrapping="Wrap"/>
+        </StackPanel>
+        <StackPanel x:Name="Navigation"/>
+      </DockPanel>
+    </Border>
+    <Grid Grid.Column="1" Margin="28,26,28,0">
+      <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+      <StackPanel Margin="0,0,0,18">
+        <TextBlock x:Name="PageTitle" FontSize="28" FontWeight="SemiBold"/>
+        <TextBlock x:Name="Subtitle" Margin="0,10,0,0" Foreground="#60747C" TextWrapping="Wrap"/>
+      </StackPanel>
+      <DockPanel Grid.Row="1" Margin="0,0,0,12">
+        <Button x:Name="CancelButton" DockPanel.Dock="Right" Click="CancelClicked" Visibility="Collapsed"/>
+        <StackPanel><TextBlock x:Name="Status" Foreground="#60747C" TextWrapping="Wrap"/><ProgressBar x:Name="Progress" IsIndeterminate="True" Height="4" Margin="0,8,0,0" Visibility="Collapsed"/></StackPanel>
+      </DockPanel>
+      <ContentControl x:Name="Body" Grid.Row="2"/>
+      <DockPanel Grid.Row="3" Margin="0,14,0,14" x:Name="SelectionBar">
+        <Button x:Name="ReviewButton" DockPanel.Dock="Right" Click="ReviewClicked" Background="#087F83" Foreground="White"/>
+        <Button x:Name="ClearButton" DockPanel.Dock="Right" Click="ClearClicked"/>
+        <TextBlock x:Name="SelectionText" VerticalAlignment="Center" FontWeight="SemiBold"/>
+      </DockPanel>
+    </Grid>
+  </Grid>
+</Window>
