@@ -275,8 +275,8 @@ public partial class MainWindow : Window
     }
     internal async Task RestoreAsync(Guid id)
     {
-        LastError = null; SetBusy(true);
-        try { await Sta.Run(() => new Cleaner(Store, new WindowsRecycler()).Restore(id)); _status = new("복원 작업 완료"); Rows.Clear(); _scannedPage = null; }
+        LastError = null; _cancellation = new(); SetBusy(true);
+        try { await Sta.Run(() => new Cleaner(Store, new WindowsRecycler()).Restore(id, _cancellation.Token)); _status = new(_cancellation.IsCancellationRequested ? "남은 작업을 취소했습니다." : "복원 작업 완료"); Rows.Clear(); _scannedPage = null; }
         catch (Exception e) { LastError = e; _status = Message.Error(e); }
         finally { SetBusy(false); Render(); }
     }

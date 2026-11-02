@@ -72,12 +72,13 @@ public sealed class Cleaner(Store store, IRecycler recycler, Func<List<CacheRule
         }
         store.SaveHeader(record); return record;
     }
-    public HistoryRecord Restore(Guid recordID)
+    public HistoryRecord Restore(Guid recordID, CancellationToken token = default)
     {
         using var operationLock = store.Acquire();
         var record = store.History().First(r => r.ID == recordID);
         foreach (var item in record.Items.Where(i => i.RecyclePath != null && !i.Restored))
         {
+            if (token.IsCancellationRequested) break;
             try
             {
                 Safety.NoLinks(item.RecyclePath!); Safety.NoLinks(Path.GetDirectoryName(item.Source)!);

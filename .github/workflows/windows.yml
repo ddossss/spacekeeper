@@ -2,6 +2,11 @@ name: Windows
 on:
   push:
     branches: [main, windows]
+    paths:
+      - 'windows/**'
+      - 'Sources/SpacekeeperCore/Resources/translations.json'
+      - 'scripts/*windows*'
+      - '.github/workflows/windows.yml'
   pull_request:
   workflow_dispatch:
 permissions:

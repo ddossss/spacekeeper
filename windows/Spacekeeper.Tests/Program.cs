@@ -48,6 +48,7 @@ Test("cache age, running app, schedule cap and disabled schedule", () => {
 });
 Test("unsupported cache and running app remain untouched", () => { var entry=Put(Folder(),"a"); var (s,r,_)=Setup(); var c=new Cleaner(s,r,()=>[],_=>false); Check(c.Clean(new(CleanupKind.Cache,[entry]),default).MovedCount==0); });
 Test("cancellation does not move files", () => { var entry=Put(Folder(),"a"); var (_,r,c)=Setup(); Check(c.Clean(new(CleanupKind.Large,[entry]),new CancellationToken(true)).MovedCount==0 && r.Count==0); });
+Test("restore cancellation leaves recoverable files in trash", () => { var entry=Put(Folder(),"a"); var (_,_,c)=Setup(); var record=c.Clean(new(CleanupKind.Large,[entry]),default); Check(!c.Restore(record.ID,new CancellationToken(true)).Items.Single().Restored && !File.Exists(entry.Path)); Check(c.Restore(record.ID).Items.Single().Restored && File.Exists(entry.Path)); });
 Test("missing receipt preserves uncertain movement in journal", () => { var entry=Put(Folder(),"a"); var s=new Store(Folder()); var c=new Cleaner(s,new MissingReceiptRecycler(Folder())); var result=c.Clean(new(CleanupKind.Large,[entry]),default); Check(result.Items.Single().Pending && result.Items.Single().Error!=null && s.History().Single().Items.Single().Pending); });
 if (OperatingSystem.IsWindows())
 {

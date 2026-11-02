@@ -1,26 +1,162 @@
 {
-  "Windows 저장 공간": {"en":"Windows storage","ja":"Windows ストレージ"},
-  "검사 완료": {"en":"Scan complete","ja":"スキャン完了"},
-  "경로": {"en":"Path","ja":"パス"},
-  "그룹": {"en":"Group","ja":"グループ"},
-  "나의 Windows 정리 도구": {"en":"A little room for your Windows","ja":"Windows に、ゆとりを。"},
-  "로그인한 동안 앱을 종료해도 예약이 실행됩니다. 앱을 이동했다면 설정을 다시 저장하세요. 중복 파일은 자동으로 정리하지 않습니다.": {"en":"Scheduled cleanup runs while you are signed in, even with the app closed. Save again if you move the app. Duplicate files are never cleaned automatically.","ja":"サインイン中はアプリを閉じても予約が実行されます。アプリを移動した場合は再保存してください。重複ファイルは自動で削除しません。"},
-  "로컬 NTFS 드라이브만 지원합니다.": {"en":"Only local NTFS drives are supported.","ja":"ローカル NTFS ドライブのみ対応しています。"},
-  "버전": {"en":"Version","ja":"バージョン"},
-  "복원을 확인할 수 없습니다. 휴지통을 확인해 주세요.": {"en":"Restoration could not be verified. Check the Recycle Bin.","ja":"復元を確認できませんでした。ごみ箱を確認してください。"},
-  "설치 앱 설정": {"en":"Installed apps settings","ja":"インストール済みアプリの設定"},
-  "설치 앱과 시작 프로그램을 Windows 설정에서 관리하세요.": {"en":"Manage installed apps and startup apps in Windows Settings.","ja":"インストール済みアプリとスタートアップを Windows の設定で管理できます。"},
-  "시작 프로그램 설정": {"en":"Startup apps settings","ja":"スタートアップの設定"},
-  "실행 중인 앱: {0}": {"en":"App is running: {0}","ja":"実行中のアプリ: {0}"},
-  "예약 작업 응답 시간이 초과되었습니다.": {"en":"The scheduled task request timed out.","ja":"予約タスクの応答がタイムアウトしました。"},
-  "예약 작업을 변경할 수 없습니다: {0}": {"en":"Could not update the scheduled task: {0}","ja":"予約タスクを変更できません: {0}"},
-  "오류: {0}": {"en":"Error: {0}","ja":"エラー: {0}"},
-  "이름 충돌로 다른 위치에 복원했습니다: {0}": {"en":"Restored with a different name to avoid a collision: {0}","ja":"名前の衝突を避けて別の名前で復元しました: {0}"},
-  "처리 중단 · 탐색기에서 확인": {"en":"Interrupted · check File Explorer","ja":"処理が中断されました · エクスプローラーで確認"},
-  "크기": {"en":"Size","ja":"サイズ"},
-  "탐색기에서 보기": {"en":"Show in File Explorer","ja":"エクスプローラーで表示"},
-  "파일 이름": {"en":"File name","ja":"ファイル名"},
-  "파일을 확인하고, 필요한 것만 남기세요.": {"en":"Make room for the things you want to keep.","ja":"ファイルを見直して、大切なものを残しましょう。"},
-  "휴지통 위치를 확인할 수 없습니다. 탐색기에서 확인해 주세요.": {"en":"Could not confirm the Recycle Bin location. Check File Explorer.","ja":"ごみ箱の場所を確認できませんでした。エクスプローラーで確認してください。"},
-  "휴지통으로 옮긴 파일은 아직 디스크 공간을 차지합니다. 정리를 확인한 뒤 Windows 휴지통을 비우세요. 비운 파일은 복원할 수 없습니다.": {"en":"Recycled files still use disk space. After reviewing your cleanup, empty the Windows Recycle Bin to reclaim it. Emptied files cannot be restored.","ja":"ごみ箱内のファイルはディスク容量を使用します。整理結果を確認してから Windows のごみ箱を空にしてください。空にしたファイルは復元できません。"}
+  "Windows 저장 공간": {
+    "en": "Windows storage",
+    "ja": "Windows ストレージ"
+  },
+  "검사 완료": {
+    "en": "Scan complete",
+    "ja": "スキャン完了"
+  },
+  "경로": {
+    "en": "Path",
+    "ja": "パス"
+  },
+  "그룹": {
+    "en": "Group",
+    "ja": "グループ"
+  },
+  "나의 Windows 정리 도구": {
+    "en": "A little room for your Windows",
+    "ja": "Windows に、ゆとりを。"
+  },
+  "로그인한 동안 앱을 종료해도 예약이 실행됩니다. 앱을 이동했다면 설정을 다시 저장하세요. 중복 파일은 자동으로 정리하지 않습니다.": {
+    "en": "Scheduled cleanup runs while you are signed in, even with the app closed. Save again if you move the app. Duplicate files are never cleaned automatically.",
+    "ja": "サインイン中はアプリを閉じても予約が実行されます。アプリを移動した場合は再保存してください。重複ファイルは自動で削除しません。"
+  },
+  "로컬 NTFS 드라이브만 지원합니다.": {
+    "en": "Only local NTFS drives are supported.",
+    "ja": "ローカル NTFS ドライブのみ対応しています。"
+  },
+  "버전": {
+    "en": "Version",
+    "ja": "バージョン"
+  },
+  "복원을 확인할 수 없습니다. 휴지통을 확인해 주세요.": {
+    "en": "Restoration could not be verified. Check the Recycle Bin.",
+    "ja": "復元を確認できませんでした。ごみ箱を確認してください。"
+  },
+  "설치 앱 설정": {
+    "en": "Installed apps settings",
+    "ja": "インストール済みアプリの設定"
+  },
+  "설치 앱과 시작 프로그램을 Windows 설정에서 관리하세요.": {
+    "en": "Manage installed apps and startup apps in Windows Settings.",
+    "ja": "インストール済みアプリとスタートアップを Windows の設定で管理できます。"
+  },
+  "시작 프로그램 설정": {
+    "en": "Startup apps settings",
+    "ja": "スタートアップの設定"
+  },
+  "실행 중인 앱: {0}": {
+    "en": "App is running: {0}",
+    "ja": "実行中のアプリ: {0}"
+  },
+  "예약 작업 응답 시간이 초과되었습니다.": {
+    "en": "The scheduled task request timed out.",
+    "ja": "予約タスクの応答がタイムアウトしました。"
+  },
+  "예약 작업을 변경할 수 없습니다: {0}": {
+    "en": "Could not update the scheduled task: {0}",
+    "ja": "予約タスクを変更できません: {0}"
+  },
+  "오류: {0}": {
+    "en": "Error: {0}",
+    "ja": "エラー: {0}"
+  },
+  "이름 충돌로 다른 위치에 복원했습니다: {0}": {
+    "en": "Restored with a different name to avoid a collision: {0}",
+    "ja": "名前の衝突を避けて別の名前で復元しました: {0}"
+  },
+  "처리 중단 · 탐색기에서 확인": {
+    "en": "Interrupted · check File Explorer",
+    "ja": "処理が中断されました · エクスプローラーで確認"
+  },
+  "크기": {
+    "en": "Size",
+    "ja": "サイズ"
+  },
+  "탐색기에서 보기": {
+    "en": "Show in File Explorer",
+    "ja": "エクスプローラーで表示"
+  },
+  "파일 이름": {
+    "en": "File name",
+    "ja": "ファイル名"
+  },
+  "파일을 확인하고, 필요한 것만 남기세요.": {
+    "en": "Make room for the things you want to keep.",
+    "ja": "ファイルを見直して、大切なものを残しましょう。"
+  },
+  "휴지통 위치를 확인할 수 없습니다. 탐색기에서 확인해 주세요.": {
+    "en": "Could not confirm the Recycle Bin location. Check File Explorer.",
+    "ja": "ごみ箱の場所を確認できませんでした。エクスプローラーで確認してください。"
+  },
+  "휴지통으로 옮긴 파일은 아직 디스크 공간을 차지합니다. 정리를 확인한 뒤 Windows 휴지통을 비우세요. 비운 파일은 복원할 수 없습니다.": {
+    "en": "Recycled files still use disk space. After reviewing your cleanup, empty the Windows Recycle Bin to reclaim it. Emptied files cannot be restored.",
+    "ja": "ごみ箱内のファイルはディスク容量を使用します。整理結果を確認してから Windows のごみ箱を空にしてください。空にしたファイルは復元できません。"
+  },
+  "/Applications와 사용자 Applications 폴더의 앱을 표시합니다. 제거가 필요하면 Finder에서 앱을 확인한 뒤 휴지통으로 이동하세요.": {
+    "en": "Apps in /Applications and your Applications folder are listed here. To uninstall an app, review it in Finder and move it to Recycle Bin.",
+    "ja": "/ApplicationsとユーザーのApplicationsフォルダ内のアプリを表示します。削除する場合はFinderで確認してからゴミ箱へ移動してください。"
+  },
+  "Finder 휴지통에서 직접 복원해 주세요.": {
+    "en": "Restore this file directly from Recycle Bin in Finder.",
+    "ja": "Finderのゴミ箱から直接復元してください。"
+  },
+  "{0}개 파일, {1}을 휴지통으로 옮겼습니다.{2}\n휴지통을 비우면 디스크 공간이 확보됩니다.": {
+    "en": "Files moved to Recycle Bin: {0} ({1}).{2}\nEmpty Recycle Bin to reclaim disk space.",
+    "ja": "{0}個のファイル（{1}）をゴミ箱へ移動しました。{2}\nゴミ箱を空にすると空き容量が増えます。"
+  },
+  "{0}개 파일을 복원하지 못했습니다. 휴지통과 정리 기록의 상세 내용을 확인하세요.": {
+    "en": "Files that could not be restored: {0}. Check Recycle Bin and the details in cleanup history.",
+    "ja": "{0}個のファイルを復元できませんでした。ゴミ箱と整理履歴の詳細を確認してください。"
+  },
+  "선택한 파일은 검토 후 휴지통으로 이동합니다.": {
+    "en": "Review selected files before moving them to Recycle Bin.",
+    "ja": "選択したファイルは確認後にゴミ箱へ移動します。"
+  },
+  "선택한 파일은 휴지통으로 이동합니다. 정리 기록에서 복원할 수 있어요.": {
+    "en": "Selected files go to Recycle Bin. Restore them from cleanup history.",
+    "ja": "選択したファイルはゴミ箱へ移動します。整理履歴から復元できます。"
+  },
+  "선택한 파일을 확인하고 휴지통으로 옮기는 중…": {
+    "en": "Checking selected files and moving them to Recycle Bin…",
+    "ja": "選択したファイルを確認し、ゴミ箱へ移動中…"
+  },
+  "정해진 시간에 오래된 캐시를 휴지통으로 옮깁니다.": {
+    "en": "Move old caches to Recycle Bin on a schedule.",
+    "ja": "決まった時刻に古いキャッシュをゴミ箱へ移動します。"
+  },
+  "파일을 확인해 주세요. 정리 기록에서 복원할 수 있으며, 휴지통을 비우기 전까지는 디스크 공간을 차지합니다.": {
+    "en": "Review these files. You can restore them from cleanup history. They still use disk space until you empty Recycle Bin.",
+    "ja": "ファイルを確認してください。整理履歴から復元できます。ゴミ箱を空にするまではディスク容量を使用します。"
+  },
+  "휴지통 열기": {
+    "en": "Open Recycle Bin",
+    "ja": "ゴミ箱を開く"
+  },
+  "휴지통 위치를 확인할 수 없습니다. Finder에서 확인해 주세요.": {
+    "en": "Could not locate Recycle Bin. Check in Finder.",
+    "ja": "ゴミ箱の場所を確認できません。Finderで確認してください。"
+  },
+  "휴지통 이동 {0}개 · {1}": {
+    "en": "In Recycle Bin: {0} · {1}",
+    "ja": "ゴミ箱へ移動 {0}個 · {1}"
+  },
+  "휴지통에 남아 있는 파일을 복원합니다. 같은 이름의 파일이 있으면 덮어쓰지 않습니다.": {
+    "en": "Files still in Recycle Bin will be restored. Existing files with the same name will not be overwritten.",
+    "ja": "ゴミ箱に残っているファイルを復元します。同名のファイルがある場合は上書きしません。"
+  },
+  "휴지통으로 옮긴 파일은 아직 디스크 공간을 차지합니다. 정리를 확인한 뒤 Finder에서 휴지통을 비우세요. 비운 파일은 복원할 수 없습니다.": {
+    "en": "Files in Recycle Bin still use disk space. After reviewing your cleanup, empty Recycle Bin in Finder. Emptied files cannot be restored.",
+    "ja": "ゴミ箱内のファイルはまだディスク容量を使用しています。整理内容を確認してからFinderでゴミ箱を空にしてください。空にしたファイルは復元できません。"
+  },
+  "휴지통으로 이동": {
+    "en": "Move to Recycle Bin",
+    "ja": "ゴミ箱へ移動"
+  },
+  "휴지통으로 이동하기 전 확인": {
+    "en": "Review before moving to Recycle Bin",
+    "ja": "ゴミ箱への移動前に確認"
+  }
 }
